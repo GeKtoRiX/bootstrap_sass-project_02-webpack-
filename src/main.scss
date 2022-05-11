@@ -1,0 +1,33 @@
+// bootstrap.
+@use './styles/scss/custom';
+// site components.
+@use './styles/scss/components/animations';
+@use './styles/scss/components/buttons';
+@use './styles/scss/components/typography';
+@use './styles/scss/components/mixes';
+// site sections.
+@use './styles/scss/sections/navbar';
+@use './styles/scss/sections/introSection';
+@use './styles/scss/sections/companies';
+@use './styles/scss/sections/services';
+@use './styles/scss/sections/testimonials';
+@use './styles/scss/sections/faq';
+@use './styles/scss/sections/portfolio';
+@use './styles/scss/sections/getStarted';
+@use './styles/scss/sections/footer';
+// google fonts.
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
