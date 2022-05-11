@@ -4,7 +4,7 @@
 @use './styles/scss/components/animations';
 @use './styles/scss/components/buttons';
 @use './styles/scss/components/typography';
-@use './styles/scss/components/mixes';
+@use './styles/scss/components/mixins';
 // site sections.
 @use './styles/scss/sections/navbar';
 @use './styles/scss/sections/introSection';
@@ -23,7 +23,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
 
