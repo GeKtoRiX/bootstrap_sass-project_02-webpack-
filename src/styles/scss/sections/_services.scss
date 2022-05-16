@@ -7,7 +7,7 @@
     @include media-breakpoint-down(lg) {
         text-align: center;
 
-        img{
+        img {
             display: none;
         }
 
@@ -33,6 +33,40 @@
 
     background-color: $primary;
     color:white;
+}
+
+.services .row:nth-child(2) {
+    background-color: $light-green;
+
+    .btn-rounded {
+        border: 0.2rem  solid white;
+        background-color: $light-green;
+        color: white;
+
+        &:hover {
+            border: 0.2rem solid $white;
+            background-color: $primary;
+
+            span {
+                background-color: $primary;
+                border: 0.2rem  solid white;
+                i {
+                    color: $white;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+        span {
+            border: 0.2rem  solid white;
+            background-color: $light-green;
+            i {
+                color: $white;
+                line-height: 1.7rem;
+            }
+        }
+
+    }
 }
 
 .border-right {
