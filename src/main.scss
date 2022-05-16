@@ -16,7 +16,7 @@
 @use './styles/scss/sections/getStarted';
 @use './styles/scss/sections/footer';
 // google fonts.
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather:wght@300;400;700;900&family=Pacifico&display=swap');
 
 * {
   box-sizing: border-box;
@@ -25,9 +25,4 @@
 html {
   font-size: 18px;
   font-family: 'Merriweather', serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }

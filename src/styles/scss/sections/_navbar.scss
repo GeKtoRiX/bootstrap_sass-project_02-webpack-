@@ -3,14 +3,30 @@
 
 .menu {
     @include nav-gradient;
+    
+    @include media-breakpoint-down(xl) {
+        text-align: center;
+        .btn-rounded {
+            display: none;
+        }
+    }
 
     li {
         padding: 0 0.7rem;
+        border: 0.2rem solid $purple-dark;
 
         a {
             color: $white !important;
             text-transform: capitalize;
             font-weight: 600;
         }
+    }
+
+    li:hover{
+        width: 100%;
+        border-radius: 2rem;
+        border: 0.2rem solid white;
+        background-color: $light-green;
+        transition: background-color 0.5s;
     }
 }

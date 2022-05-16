@@ -29,6 +29,7 @@
         }
 
         display: inline-block;
+        margin-top: 2rem;
         font-weight: 600;
         color: $gray-200;
     }
@@ -46,4 +47,18 @@
         font-weight: 300;
         color: $gray-200;
     }
+}
+
+.heading-line::before{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 0.150rem;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    background-color: $gray-200;
+}
+
+.display-5{
+    font-family: 'Indie Flower', cursive;
 }

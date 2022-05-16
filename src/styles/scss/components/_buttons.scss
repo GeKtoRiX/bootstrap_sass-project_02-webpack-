@@ -5,17 +5,13 @@
 
     transition: 0.5s;
 
-    @include media-breakpoint-down(xl) {
-        display: none;
-    }
-
     border: 0.2rem solid rgba($gray-400, 0.5);
     position: relative;
     margin: 0;
     // top | right | bottom | left 
     padding: 0.5rem 3rem 0.5rem 0.8rem;
     font-weight: 700;
-    background-color: $gray-200;
+    background-color: $white;
 
     span {
         position: absolute;
@@ -28,7 +24,7 @@
         background-color: $primary;
 
         i {
-            color: $gray-200;
+            color: $white;
             font-size: 1.1rem;
             line-height: 2.1rem;
         }
@@ -36,8 +32,8 @@
 
     &:hover {
         border: 0.2rem solid $white;
-        background-color: #35CE8D;
-        color: $gray-200;
+        background-color: $light-green;
+        color: $white;
 
         span {
             border: 0.2rem solid $white;
