@@ -1,4 +1,12 @@
-// gradients mixin
-@mixin nav-gradient{
-    background-color: #9926f0;
+// Абсолютное центрирование(Не забудь указать относительный элемент!).
+@mixin absoluteCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+// Переход.
+@mixin transitionStdStyle {
+    transition-duration: 1000ms;
+    transition-property: all;
 }

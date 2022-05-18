@@ -2,7 +2,7 @@
 @use '../components/mixins' as *;
 
 .menu {
-    @include nav-gradient;
+    background-color: $primary;
     
     @include media-breakpoint-down(xl) {
         text-align: center;

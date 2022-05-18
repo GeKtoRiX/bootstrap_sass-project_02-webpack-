@@ -1,0 +1,47 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.testimonials {
+    position: relative;
+    padding: 0;
+    background-color: $primary;
+
+    &__card {
+        margin: 1rem;
+        padding: 1.5rem;
+        height: auto;
+        border-radius: 0.6rem;
+        background-color: $light-green;
+        text-align: center;
+
+        i {
+            font-size: 1.5rem;
+        }
+
+        .ratings {
+            padding-top: inherit;
+
+            i {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__picture {
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        background-color: #fff;
+
+        img {
+            border: 0.2rem solid $light-green;
+            border-radius: 50%;
+        }
+    }
+
+  #carouselExampleCaptions{
+      button:first-of-type{
+          margin-right: 25%;
+      }
+  }
+}

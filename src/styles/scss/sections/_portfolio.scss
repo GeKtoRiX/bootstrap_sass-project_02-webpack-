@@ -1,0 +1,70 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+.portfolio {
+    background-color: $primary;
+
+    button {
+        text-transform: capitalize;
+    }
+
+    .portfolioBox {
+        margin: 0 auto;
+        // Границы растягивания озображения в пределах материнсого элемента.
+        position: relative;
+        // Уравнивание ширины и высоты блока портфолио с материнским элементом.
+        width: 100%;
+        // Ширина элемента.
+        max-height: 14rem;
+        // Скрытие элементов, выходящих за размеры изображения.
+        overflow: hidden;
+        // Внешний отступ от нижней части изображения.
+        margin-bottom: 1.5rem;
+        border-top: 0.5rem solid $purple;
+
+        img {
+            // Уравнивание ширины изображений с материнским элементом.
+            width: 100%;
+        }
+
+        .portfolio-info {
+            background-color: rgba($primary, 0.75);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // Сокрытие элемента до вызова.
+            opacity: 0;
+            visibility: hidden;
+
+            .caption {
+                color: $white;
+                width: inherit;
+                height: inherit;
+                @include absoluteCenter;
+
+                h4 {
+                    display: block;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &:hover {
+
+            img {
+                // Плавное увеличение изображения при наведении.
+                @include transitionStdStyle;
+                transform: scale(1.5);
+            }
+
+            // Отображение элемента при наведении.
+            .portfolio-info {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

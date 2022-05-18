@@ -29,7 +29,6 @@
         }
 
         display: inline-block;
-        margin-top: 2rem;
         font-weight: 600;
         color: $gray-200;
     }
@@ -41,9 +40,9 @@
         }
 
         display: block;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         text-transform: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 300;
         color: $gray-200;
     }
@@ -55,6 +54,7 @@
     width: 40%;
     height: 0.1rem;
     margin: 0 auto;
+    margin-bottom: 1.5rem;
     border-radius: 0.2rem;
     background-color: $gray-200;
 }

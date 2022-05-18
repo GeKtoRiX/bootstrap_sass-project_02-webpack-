@@ -1,34 +1,30 @@
 @use '../custom'as *;
 @use '../components/mixins'as *;
 
+
 .services {
     text-align: center;
+
+    .container:first-of-type {
+       padding-top: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .container:nth-of-type(2) {
+            display: none;
+        }
+    }
+
+    .container:last-of-type {
+        padding-bottom: 3rem;
+     }
 
     @include media-breakpoint-down(lg) {
         text-align: center;
 
-        img {
+       img {
             display: none;
-        }
-
-        .border-right {
-            border: none;
-        }
-
-        .border-right::after {
-            content: "";
-            display: block;
-            width: 45%;
-            height: 2px;
-            margin: 1.5rem auto;
-            background-color: $white;
-        }
-
-        .textWhite {
-            p {
-                text-align: center;
-            }
-        }
+        } 
     }
 
     background-color: $primary;
@@ -39,7 +35,7 @@
     background-color: $light-green;
 
     .btn-rounded {
-        border: 0.2rem  solid white;
+        border: 0.2rem solid white;
         background-color: $light-green;
         color: white;
 
@@ -49,7 +45,8 @@
 
             span {
                 background-color: $primary;
-                border: 0.2rem  solid white;
+                border: 0.2rem solid white;
+
                 i {
                     color: $white;
                     line-height: 1.7rem;
@@ -58,8 +55,9 @@
         }
 
         span {
-            border: 0.2rem  solid white;
+            border: 0.2rem solid white;
             background-color: $light-green;
+
             i {
                 color: $white;
                 line-height: 1.7rem;
@@ -69,6 +67,3 @@
     }
 }
 
-.border-right {
-    border-right: 3px solid $white;
-}
