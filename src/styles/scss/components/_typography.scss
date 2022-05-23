@@ -48,17 +48,21 @@
     }
 }
 
-.heading-line::before{
+.heading-line::before {
     content: "";
     display: block;
     width: 40%;
     height: 0.1rem;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 0.2rem;
     background-color: $gray-200;
 }
 
-.display-5{
+.display-5 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.display-6 {
     font-family: 'Indie Flower', cursive;
 }

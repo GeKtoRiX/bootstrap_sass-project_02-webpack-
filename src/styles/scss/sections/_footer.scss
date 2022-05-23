@@ -1,0 +1,45 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+
+.footer {
+    background-color: black;
+
+    .contact-box {
+        color: $primary;
+
+        &__icon {
+            i{
+                margin-right: 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        &__info {
+            a {
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $white;
+            }
+
+            p {
+                font-weight: 600;
+                color: #6c757d;
+            }
+        }
+    }
+    .social-media {
+        &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                margin-right: 1rem;
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
